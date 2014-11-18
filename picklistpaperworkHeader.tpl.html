@@ -1,0 +1,103 @@
+<div class="page page_landscape">
+   <table>
+        <tr>
+            <td width="40%" class="red-header">DISPATCH ON OR BEFORE >> </td>
+            <td width="25%" class="red-header">[request_date]</td>
+            <td width="25%" class="red-header">[picklist_barcode]</td>
+        </tr>
+        
+        <tr>
+            <table>
+                <tr>
+                    <th>Acc No</th>
+                    <td>[acc_no]</td>
+                    <th>Order Type</th>
+                    <td>[order_type]</td>
+                    <th rowspan="2">Route</th>
+                    <td rowspan="2">[route]</td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>[name]</td>
+                    <th>Received Date</th>
+                    <td>[received_date]</td>
+                </tr>
+                <tr>
+                    <th>Order No</th>
+                    <td>[order_no]</td>
+                    <th>Pick List Printed Date</th>
+                    <td>[picklist_print_date]</td>
+                    <th>Page</th>
+                    <td>[page_num] of [page_total]</td>
+                </tr>
+                <tr>
+                    <th>Pick List</th>
+                    <td>[picklist_name]</td>
+                    <td colspan="2">[packing_option]</td>
+                    <th>DUAL/MULTI</th>
+                    <td>[dual_multi]</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" colspan="2" id="special-instructions">Special Instructions</th>
+                    <td rowspan="3" colspan="4" id="special-instructions">[special_instructions_array]</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th class="col-0">Loc'n</th>
+                    <th class="col-1">Qty</th>
+                    <th class="col-2">Proc</th>
+                    <th class="col-3">Pack</th>
+                    <th class="col-4">Decoration</th>
+                    <th class="col-5">Product</th>
+                    <th class="col-6">Colour</th>
+                    <th class="col-7">Size</th>
+                    <th class="col-8">Additional Info</th>
+                    <th class="col-9">SKU</th>
+                </tr>
+            </table>
+        </tr>
+
+   </table>
+   <table class="no-border row-content">
+    [picklist_items]
+   </table>
+   <table class="no-border">
+        <tr>
+            <td class="h-foot-col-0 no-border"></td>
+            <td id="total-price" class="h-foot-col-1">[total_products]</td>
+            <td class="h-foot-col-2 text-left no-border">Total Products</td>
+            <th class="h-foot-col-3">Post</th>
+            <td class="h-foot-col-4"></td>
+            <th class="h-foot-col-5">Small</th>
+            <td class="h-foot-col-6"></td>
+            <th class="h-foot-col-7">Invoiced By</th>
+            <td class="h-foot-col-8" colspan="2"></td>
+        </tr>
+    </table>
+    <table class="no-border">
+        <tr>
+            <th class="foot-col-0">Processed By:</th>
+            <td class="foot-col-1"></td>
+            <th class="foot-col-2">Packing Checked By: </th>
+            <td class="foot-col-3"></td>
+            <th class="foot-col-4">Bag</th>
+            <td class="foot-col-5"></td>
+            <th class="foot-col-6">Medium</th>
+            <td class="foot-col-7"></td>
+            <th class="foot-col-8" colspan="2">Box Total</th>
+        </tr>
+        <tr>
+            <th class="foot-col-0">Checked By:</th>
+            <td class="foot-col-1"></td>
+            <th class="foot-col-2">Packed By: </th>
+            <td class="foot-col-3"></td>
+            <th class="foot-col-4">Exp Box</th>
+            <td class="foot-col-5"></td>
+            <th class="foot-col-6">Large</th>
+            <td class="foot-col-7"></td>
+            <td class="foot-col-8" colspan="2"></td>
+        </tr>
+   </table>
+
+</div>
